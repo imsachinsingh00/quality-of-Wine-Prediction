@@ -1,16 +1,59 @@
-# quality-of-Wine-Prediction
+# Wine Quality Prediction
 
+This project predicts wine quality using a supervised machine learning model trained on physicochemical test data.
 
-Simple and clean practice dataset for regression or classification modelling
-link : https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009
+## 📁 Project Structure
 
-I have taken good quality of wine as the number 6 or more than 6  && else all are not as good quality.
+- `Wine_quality_prediction.ipynb`: Jupyter notebook for training and evaluating the model.
+- `wine_quality.csv`: Dataset of wine samples with chemical attributes.
+- `README.md`: Project documentation.
 
-About Dataset
-Context
+## 🍷 Dataset Features
 
-The two datasets are related to red and white variants of the Portuguese "Vinho Verde" wine. For more details, consult the reference [Cortez et al., 2009]. Due to privacy and logistic issues, only physicochemical (inputs) and sensory (the output) variables are available (e.g. there is no data about grape types, wine brand, wine selling price, etc.).
+Includes attributes like:
+- Fixed Acidity
+- Volatile Acidity
+- Citric Acid
+- Residual Sugar
+- Chlorides
+- Free Sulfur Dioxide
+- Total Sulfur Dioxide
+- Density
+- pH, Sulphates, Alcohol
+- Quality (target)
 
-These datasets can be viewed as classification or regression tasks. The classes are ordered and not balanced (e.g. there are much more normal wines than excellent or poor ones).
+## ⚙️ Requirements
 
-This dataset is also available from the UCI machine learning repository, https://archive.ics.uci.edu/ml/datasets/wine+quality , I just shared it to kaggle for convenience. (If I am mistaken and the public license type disallowed me from doing so, I will take this down if requested.)
+- Python 3.x
+- pandas
+- numpy
+- seaborn
+- matplotlib
+- scikit-learn
+
+Install with:
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
+## 🚀 How to Run
+
+1. Ensure `wine_quality.csv` is in the working directory.
+2. Launch and run `Wine_quality_prediction.ipynb`.
+3. Model is trained and evaluated in the notebook.
+
+## 🧠 Model Used
+
+- Random Forest Classifier
+- Decision Trees
+- Logistic Regression
+
+## 📈 Evaluation
+
+- Accuracy
+- Confusion Matrix
+- Classification Report
+
+## 📄 License
+
+MIT License.
